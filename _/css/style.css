@@ -10,12 +10,13 @@ body::before, body::after, body *::before, body *::after { content: ""; }
 h1, h2, h3, h4 { padding: 3px 7px; font-weight: normal; font-size: 22px; background: #5d503e; color: #fff; border-radius: 2px; }
 
 /* 단락 설정 */
-p { color: #5b574e; /* 느낌표 기울이도록 설정 */ }
+p { color: #5b574e; }
 p strong { color: #15120f; }
 p .exclamation-mark { font-style: italic; }
 
 /** BGM 설정 --------------------------------------------------- */
 /* BGM 제어 버튼 포커스 상태에 따른 설정 */
+.mute-BGM { cursor: pointer; }
 .mute-BGM.focusable { top: -1px; padding: 10px; text-decoration: none; color: #fff; background: #99927f; border-radius: 0 0 3px 3px; }
 .mute-BGM.focusable:focus { outline: none; }
 

@@ -34,7 +34,7 @@ p
 	color: #5b574e
 	strong
 		color: #15120f
-	/* 느낌표 기울이도록 설정 */
+	// 느낌표 기울이도록 설정
 	.exclamation-mark
 		font-style: italic
 
@@ -44,16 +44,17 @@ p
  --------------------------------------------------- */
 
 /* BGM 제어 버튼 포커스 상태에 따른 설정 */
-.mute-BGM.focusable
-	top: -1px
-	padding: 10px
-	text-decoration: none
-	color: #fff
-	background: #99927f
-	border-radius: 0 0 3px 3px
-
-	&:focus
-		outline: none
+.mute-BGM
+	cursor: pointer
+	&.focusable
+		top: -1px
+		padding: 10px
+		text-decoration: none
+		color: #fff
+		background: #99927f
+		border-radius: 0 0 3px 3px
+		&:focus
+			outline: none
 
 
 /**
