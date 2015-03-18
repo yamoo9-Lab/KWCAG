@@ -1,253 +1,85 @@
-html {
-  overflow-y: visible;
-}
+@charset "UTF-8";
+/** 기본 스타일 --------------------------------------------------- */
+html { overflow-y: visible; }
 
-body {
-  font: 0.875rem/1.5 "Nanum Gothic", Dotum, Sans-Serif;
-  letter-spacing: -0.05em;
-  color: #120D20;
-}
-body, body *, body::before, body::after, body *::before, body *::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body::before, body::after, body *::before, body *::after {
-  content: "";
-}
+body { font: 14px/1.5 "Nanum Gothic", Dotum, Sans-Serif; letter-spacing: -0.05em; color: #120d20; }
+body, body *, body::before, body::after, body *::before, body *::after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body::before, body::after, body *::before, body *::after { content: ""; }
 
-h1, h2, h3, h4 {
-  padding: 0.15rem 0.4rem;
-  font-weight: normal;
-  font-size: 1.4rem;
-  background: #5D503E;
-  color: #fff;
-  border-radius: 0.15rem;
-}
+/* 제목 설정 */
+h1, h2, h3, h4 { padding: 3px 7px; font-weight: normal; font-size: 22px; background: #5d503e; color: #fff; border-radius: 2px; }
 
-p {
-  font-size: 0.9rem;
-  color: #5B574E;
-}
-p strong {
-  color: #15120F;
-}
-p .exclamation-mark {
-  font-style: italic;
-}
+/* 단락 설정 */
+p { color: #5b574e; /* 느낌표 기울이도록 설정 */ }
+p strong { color: #15120f; }
+p .exclamation-mark { font-style: italic; }
 
-.mute-BGM.focusable {
-  top: -1px;
-  padding: 10px;
-  text-decoration: none;
-  color: #fff;
-  background: #99927f;
-  border-radius: 0 0 3px 3px;
-}
-.mute-BGM.focusable:focus {
-  outline: none;
-}
+/** BGM 설정 --------------------------------------------------- */
+/* BGM 제어 버튼 포커스 상태에 따른 설정 */
+.mute-BGM.focusable { top: -1px; padding: 10px; text-decoration: none; color: #fff; background: #99927f; border-radius: 0 0 3px 3px; }
+.mute-BGM.focusable:focus { outline: none; }
 
-#page {
-  width: 60rem;
-  margin: 2.875rem auto 5rem;
-}
-#page .logo,
-#page .image-banner {
-  display: inline-block;
-}
-#page .question {
-  padding-bottom: 1.625rem;
-}
-#page .question img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  border: none;
-}
-#page .question img.klimt, #page .question img.book {
-  background: #F7F6EE;
-  padding: 6px;
-  border: 1px solid #EFEDE4;
-}
-#page .question a img {
-  float: left;
-}
-#page .question .flash-banner {
-  position: relative;
-  width: 280px;
-  height: 150px;
-}
-#page .question .flash-banner embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#page .question .qrcode {
-  width: 205px;
-  height: 189px;
-}
-#page .question .QnA {
-  margin-top: 30px;
-}
-#page .question .QnA p {
-  margin-top: 0;
-  margin-bottom: 3px;
-}
-#page .question .QnA img {
-  position: relative;
-  top: 3px;
-  width: 16px;
-  height: auto;
-  margin-right: 6px;
-}
-#page .question .mservice {
-  list-style: none;
-  margin-top: 44px;
-  padding-left: 0;
-}
-#page .question .mservice li {
-  float: left;
-  width: 100px;
-  text-align: center;
-}
-#page .question .mservice li a {
-  display: block;
-  text-decoration: none;
-  font-size: 13px;
-  color: #99927F;
-}
-#page .question .mservice li a:hover, #page .question .mservice li a:focus {
-  font-weight: bold;
-  color: #474338;
-}
-#page .question .mservice li img {
-  float: none;
-  height: 40px;
-}
-#page .question .mservice li em {
-  display: block;
-}
-#page .question .org-graph {
-  margin-top: 30px;
-}
-#page .question .book-info {
-  float: left;
-  margin-top: 0;
-  padding-left: 10px;
-}
-#page .question .book-info li {
-  list-style: none;
-  margin-bottom: 3px;
-}
-#page .question .book-info li .rating {
-  position: relative;
-  top: -3px;
-  display: inline-block;
-  vertical-align: top;
-  width: 105px;
-  height: 20px;
-  background: url(../images/sprites-star-rating.png) no-repeat;
-}
-#page .question .book-info li .score-a {
-  background-position: 0 100%;
-}
-#page .question .book-info li .score-b {
-  background-position: 0 80%;
-}
-#page .question .book-info li .score-c {
-  background-position: 0 60%;
-}
-#page .question .book-info li .score-d {
-  background-position: 0 40%;
-}
-#page .question .book-info li .score-e {
-  background-position: 0 20%;
-}
-#page .question .book-info li .score-f {
-  background-position: 0 0;
-}
+/** #page 설정 --------------------------------------------------- */
+#page { width: 960px; margin: 46px auto 80px; }
+#page .logo, #page .image-banner { display: inline-block; }
+#page .question { padding-bottom: 26px; }
+#page .question a img { float: left; border: none; }
+#page .question img { max-width: 100%; width: auto; height: auto; border: none; }
+#page .question img.klimt, #page .question img.book { background: #f7f6ee; padding: 6px; border: 1px solid #efede4; }
+#page .flash-banner { position: relative; width: 280px; height: 150px; }
+#page .flash-banner embed { position: absolute; top: 0; left: 0; }
+#page .qrcode { width: 205px; height: 189px; }
+#page .QnA { margin-top: 30px; }
+#page .QnA p { margin-top: 0; margin-bottom: 3px; }
+#page .QnA img { position: relative; top: 3px; width: 16px; height: auto; margin-right: 6px; }
+#page .mservice { list-style: none; margin-top: 44px; padding-left: 0; }
+#page .mservice li { float: left; width: 100px; text-align: center; }
+#page .mservice li a { display: block; text-decoration: none; font-size: 13px; color: #99927f; }
+#page .mservice li a:hover, #page .mservice li a:focus { font-weight: bold; color: #474338; }
+#page .mservice li img { float: none; height: 40px; }
+#page .mservice li em { display: block; }
+#page .org-graph { margin-top: 30px; }
+#page .book-info { float: left; margin-top: 0; padding-left: 10px; }
+#page .book-info li { list-style: none; margin-bottom: 3px; }
+#page .book-info .rating { position: relative; top: -3px; display: inline-block; vertical-align: top; width: 105px; height: 20px; background: url(../images/sprites-star-rating.png) no-repeat; }
+#page .book-info .score-a { background-position: 0 100%; }
+#page .book-info .score-b { background-position: 0 80%; }
+#page .book-info .score-c { background-position: 0 60%; }
+#page .book-info .score-d { background-position: 0 40%; }
+#page .book-info .score-e { background-position: 0 20%; }
+#page .book-info .score-f { background-position: 0 0; }
 
-video {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
+/** HTML5 Video 설정 --------------------------------------------------- */
+video { max-width: 100%; width: auto; height: auto; }
 
-.videosubbar {
-  letter-spacing: 1px;
-  font-size: 24px !important;
-}
+/* 비디오 자막 스타일 설정 */
+.videosubbar { letter-spacing: 1px; font-size: 24px !important; }
 
-#kospi {
-  margin-top: 30px;
-  border-top: 1px solid #99927F;
-  border-bottom: 1px solid #99927F;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-#kospi dt, #kospi dd {
-  margin-right: 20px;
-}
-#kospi dt {
-  float: left;
-  font-weight: bold;
-}
-#kospi dd {
-  float: left;
-}
-#kospi dd:first-of-type {
-  width: 100px;
-  color: #c5152d;
-  font-weight: bold;
-}
-#kospi dd:first-of-type img {
-  position: relative;
-  top: 1px;
-}
+/** #kospi --------------------------------------------------- */
+#kospi { margin-top: 30px; border-top: 1px solid #99927f; border-bottom: 1px solid #99927f; padding-top: 4px; padding-bottom: 4px; }
+#kospi dt, #kospi dd { margin-right: 20px; }
+#kospi dt { float: left; font-weight: bold; }
+#kospi dd { float: left; }
+#kospi dd:first-of-type { width: 100px; color: #c5152d; font-weight: bold; }
+#kospi dd:first-of-type img { position: relative; top: 1px; }
 
-.ir {
-  overflow: hidden;
-  text-indent: -9999em;
-}
+/** 공통 클래스 스타일 --------------------------------------------------- */
+/* 이미지 대체 기법 */
+.ir { overflow: hidden; text-indent: -9999em; }
 
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
+/* 스크린리더/브라우저에서 모두 감추기 */
+.hidden { display: none !important; visibility: hidden; }
 
-.acc-hidden {
-  overflow: hidden;
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-}
-.acc-hidden.focusable:active, .acc-hidden.focusable:focus {
-  overflow: visible;
-  position: static;
-  clip: auto;
-  width: auto;
-  height: auto;
-  margin: 0;
-}
+/* 스크린리더에서는 읽기 가능 */
+.acc-hidden { overflow: hidden; position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; }
+.acc-hidden.focusable:active, .acc-hidden.focusable:focus { overflow: visible; position: static; clip: auto; width: auto; height: auto; margin: 0; }
 
-.invisible {
-  visibility: hidden;
-}
+/* 화면에서는 안 보이지만, 레이아웃 공간 적용 */
+.invisible { visibility: hidden; }
 
-.cf::before, #kospi::before, .cf::after, #kospi::after {
-  content: "";
-  display: table;
-}
-.cf::after, #kospi::after {
-  clear: both;
-}
-.lt-ie8 .cf, .lt-ie8 #kospi {
-  zoom: 1;
-}
+/* float 적용 요소 감싸는 클래스 - clearfix */
+.cf::before, #kospi::before, .cf::after, #kospi::after { content: ""; display: table; }
+.cf::after, #kospi::after { clear: both; }
+.lt-ie8 .cf, .lt-ie8 #kospi { zoom: 1; }
 
 /*# sourceMappingURL=style.css.map */
