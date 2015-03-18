@@ -28,7 +28,8 @@ p .exclamation-mark { font-style: italic; }
 #page .question img.klimt, #page .question img.book { background: #f7f6ee; padding: 6px; border: 1px solid #efede4; }
 #page .flash-banner { position: relative; width: 280px; height: 150px; }
 #page .flash-banner embed { position: absolute; top: 0; left: 0; }
-#page .qrcode { width: 205px; height: 189px; }
+#page .question .qrcode { width: 205px; height: 189px; }
+#page .qr-msg { position: relative; top: 17px; font-size: 12px; color: #4c88a1; }
 #page .QnA { margin-top: 30px; }
 #page .QnA p { margin-top: 0; margin-bottom: 3px; }
 #page .QnA img { position: relative; top: 3px; width: 16px; height: auto; margin-right: 6px; }
