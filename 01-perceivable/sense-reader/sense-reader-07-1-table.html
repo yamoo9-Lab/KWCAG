@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>센스리더 웹 콘텐츠 읽기 테스트 : 표(table)</title>
+<meta name="description" content="센스 리더 웹 콘텐츠 읽기 테스트 표(table) 편">
+<link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+
+	<div id="demo">
+		<h1>센스리더 웹 콘텐츠 읽기 테스트 - 표(table) 편</h1>
+	
+		<!-- 테스트 요약: 표(table) -->
+		<!-- 
+			테이블시작 (4행 5열) (1 / 1) 
+			추천건수
+			추천종목
+			전일 수정주가
+			(13.03.26)
+			변화율(%)
+			빈줄
+			전주대비
+			전월대비
+			빈줄
+			8
+			SK 하이닉스 새창  링크
+			29,500
+			2.97
+			11.11
+			빈줄
+			7
+			삼성전자 새창  링크
+			1,509,000
+			2.31
+			-1.18
+			테이블끝
+		-->
+		<table>
+            <thead>
+                <tr>
+                    <th rowspan="2">추천건수</th>
+                    <th rowspan="2">추천종목</th>
+                    <th rowspan="2">전일 수정주가<br>(13.03.26)</th>
+                    <th colspan="2">변화율(%)</th>
+                </tr>
+                <tr>
+                    <th>전주대비</th>
+                    <th>전월대비</th>
+                </tr>                   
+            </thead>
+            <tbody>
+            	<tr>
+	            	<td>8</td>
+	            	<td><a target="_blank" href="http://finance.naver.com/item/main.nhn?code=000660">SK 하이닉스</a></td>
+	            	<td>29,500</td>
+	            	<td>2.97</td>
+	            	<td>11.11</td>
+            	</tr>
+            	<tr>
+	            	<td>7</td>
+	            	<td><a target="_blank" href="http://finance.naver.com/item/main.nhn?code=005930">삼성전자</a></td>
+	            	<td>1,509,000</td>
+	            	<td>2.31</td>
+	            	<td>-1.18</td>
+            	</tr>
+            </tbody>
+        </table>
+
+	</div>
+
+</body>
+</html>

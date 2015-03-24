@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>센스리더 웹 콘텐츠 읽기 테스트 : 입력서식 (폼, form)</title>
+<meta name="description" content="센스 리더 웹 콘텐츠 읽기 테스트 입력서식 (폼, form) 편">
+<link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+
+	<div id="demo">
+		<h1>센스리더 웹 콘텐츠 읽기 테스트 - 입력서식 (폼, form) 편</h1>
+	
+		<!-- 테스트 요약: 입력서식 (폼, form) -->
+		<h2>프로필 입력</h2>
+
+		<form name="sign_member" title="회원 가입" action="" method="post">
+			<p>
+				<label for="u_id">아이디</label>
+				<span>영문소문자,숫자 조합 6~40자(-,_사용가능)</span>
+				<input type="text" id="u_id" name="u_id">
+			</p>
+			<p>
+				<label for="u_pass">비밀번호</label>
+				<input type="password" id="u_pass" name="u_pass">
+			</p>
+			<p>
+				<label for="u_pass_check">비밀번호 확인</label>
+				<input type="password" id="u_pass_check" name="u_pass_check">
+			</p>
+			<p>
+				<label for="u_name">이름</label>
+				<input type="text" id="u_name" name="u_name">
+			</p>
+			<p>
+				<label for="u_mail">이메일</label>
+				<input type="text" id="u_mail" name="u_mail">
+			</p>
+			<p>
+				이메일 수신
+				<input type="radio" id="u_mail_recive_y" name="u_mail_recive" value="y" checked="checked">
+				<label for="u_mail_recive_y">수신함</label>
+				<input type="radio" id="u_mail_recive_n" name="u_mail_recive" value="n">
+				<label for="u_mail_recive_n">수신 안함</label>
+			</p>
+			<p>
+				<label for="u_phone_first">휴대 전화</label>
+				<select name="u_phone_first" id="u_phone_first">
+					<option>선택</option>
+					<option value="010">010</option>
+					<option value="011">011</option>
+					<option value="016">016</option>
+					<option value="016">017</option>
+					<option value="016">018</option>
+					<option value="016">019</option>
+				</select>
+				<input type="text" name="u_phone_mid" maxlength="4" title="휴대 전화 중간 자리">
+				<input type="text" name="u_phone_end" maxlength="4" title="휴대 전화 마지막 자리">
+			</p>
+			<p>
+				<input type="checkbox" name="u_agreement" id="u_agreement">
+				<label for="u_agreement">ID 중복확인을 위해 입력하신 ID가 제휴사 사이트에 전달됨에 동의합니다.</label>
+
+			</p>
+			<p>
+				<label for="u_message">가입 인사</label>
+				<textarea name="u_message" id="u_message" cols="30" rows="10"></textarea>
+			</p>	
+			<p>
+				<input type="submit" value="전송">
+				<input type="reset" value="초기화">
+			</p>	
+		</form>
+
+	</div> <!--// #demo -->
+
+</body>
+</html>

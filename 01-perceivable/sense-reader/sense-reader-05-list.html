@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>센스리더 웹 콘텐츠 읽기 테스트 : 목록</title>
+<meta name="description" content="센스 리더 웹 콘텐츠 읽기 테스트 목록 편">
+<link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+
+	<div id="demo">
+		<h1>센스리더 웹 콘텐츠 읽기 테스트 - 목록 편</h1>
+	
+		<!-- 테스트 요약: 목록 -->
+		<!-- 
+			목록 시작 개수 3 (1 / 6) 
+			● 모노디 신규 과정 안내
+			● 모노디 이용약관 공지
+			● 모노디 서비스 변경 공지
+				목록 시작 개수 1 (1-1 / 1) 
+				○ 주말에도 수업이 진행됩니다.
+				목록 끝
+			목록 끝
+		-->
+		<ul>
+			<li>모노디 신규 과정 안내</li>
+			<li>모노디 이용약관 공지</li>
+			<li>모노디 서비스 변경 공지
+				<ul>
+					<li>주말에도 수업이 진행됩니다.</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<!--
+			목록 시작 개수 3 (2 / 6) 
+			1. 이불 개기
+			2. 세수
+			3. 출근 준비
+			목록 끝 
+		-->
+		<ol>
+			<li>이불 개기</li>
+			<li>세수</li>
+			<li>출근 준비</li>
+		</ol>
+	
+		<!-- 
+			목록 시작 개수 2 (3 / 6) 
+			오픈
+			AM 10:00
+			클로즈
+			PM 11:00
+			목록 끝 
+		-->
+		<dl>
+			<dt>오픈</dt>
+			<dd>AM 10:00</dd>
+			<dt>클로즈</dt>
+			<dd>PM 11:00</dd>
+		</dl>
+
+		<!-- 테스트 요약: 목록(링크, 이미지 포함) -->
+		<!-- 
+			목록 시작 개수 2 (4 / 6) 
+			● 모노디 신규 과정 안내  링크
+			● 모노디 이용약관 공지 새창  링크
+			목록 끝
+		-->
+		<ul>
+			<li><a href="http://monod.co.kr">모노디 신규 과정 안내</a></li>
+			<li><a href="http://monod.co.kr" target="_blank">모노디 이용약관 공지</a></li>
+		</ul>
+		
+		<!-- 
+			목록 시작 개수 3 (5 / 6) 
+			1. 이불 개기 그래픽 링크
+			2. 세수
+			3. 출근 준비
+			목록 끝
+		-->
+		<ol>
+			<li><a href="http://monod.co.kr"><img src="./images/이불개기.jpg" alt="이불 개기"></a></li>
+			<li>세수</li>
+			<li>출근 준비</li>
+		</ol>
+
+		<!-- 
+			목록 시작 개수 2 (6 / 6) 
+			오픈 그래픽 링크
+			AM 10:00
+			클로즈
+			PM 11:00
+			목록 끝
+		-->
+		<dl>
+			<dt><a href="http://monod.co.kr"><img src="./images/open.jpg" alt="오픈"></a></dt>
+			<dd>AM 10:00</dd>
+			<dt>클로즈</dt>
+			<dd>PM 11:00</dd>
+		</dl>
+		
+
+	</div>
+
+</body>
+</html>

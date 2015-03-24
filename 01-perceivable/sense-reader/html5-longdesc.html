@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>HTML5 표준 명세서에서 사라진 웹 접근성 관련 속성 : longdesc </title>
+<meta name="description" content="longdesc 속성의 웹 접근성과 관련된 정보">
+<link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+
+	<!-- 테스트 요약
+		
+		HTML5 비 표준 속성 : longdesc
+		스크린 리더에서 설명 있음으로 읽어 줌.
+		alt + enter를 누르면 longdesc에 연결된 페이지(새 창)로 이동 -->
+	<figure>
+		<figcaption>longdesc 속성 사용</figcaption>
+		<img 
+			src="./images/광해.jpg" 
+			longdesc="http://goo.gl/dodck" 
+			alt="광해, 왕이 된 남자 영화 포스터 : 광해군 8년, 모두가 꿈꿔온 또 한명의 왕이 있었다. 2012년 9월 개봉 작품" 
+			width="365" height="523"
+		>
+	</figure>
+
+
+	<!-- 대안 1
+		
+		img 다음에 a를 배치하여 longdesc와 같은 기능 부여.
+		화면에서 감추되, 스크린 리더에서 읽을 수 있도록 설정. -->
+	<figure>
+		<figcaption>a 하이퍼 링크 사용</figcaption>
+		<img 
+			src="./images/광해.jpg" 
+			alt="광해, 왕이 된 남자 영화 포스터 : 광해군 8년, 모두가 꿈꿔온 또 한명의 왕이 있었다. 2012년 9월 개봉 작품" 
+			width="365" height="523"
+		>
+		<a class="acc-hidden" href="http://goo.gl/dodck" target="_blank">영화 &lsquo;광해&rsquo;에 대한 자세한 내용 정보를 제공합니다.</a>
+	</figure>
+
+
+	<!-- 대안 2
+		
+		WAI-ARIA 속성 aria-describedby 속성 활용. (id와 연결) - 참고 주소: http://goo.gl/J6bMx
+		센스 리더에서 현재 미지원. -->
+	<figure>
+		<figcaption>WAI-ARIA, aria-describedby 속성 사용</figcaption>
+		<img 
+			src="./images/광해.jpg"
+			aria-describedby="movie-poster-ganghae-desc"
+			alt="광해, 왕이 된 남자 영화 포스터 : 광해군 8년, 모두가 꿈꿔온 또 한명의 왕이 있었다. 2012년 9월 개봉 작품" 
+			width="365" height="523"
+		>
+		<a 
+			id="movie-poster-ganghae-desc" 
+			class="acc-hidden" 
+			href="http://goo.gl/dodck" 
+			target="_blank">영화 &lsquo;광해&rsquo;에 대한 자세한 내용 정보를 제공합니다.</a>
+	</figure>
+
+	
+
+</body>
+</html>

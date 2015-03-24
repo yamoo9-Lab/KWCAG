@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>센스리더 웹 콘텐츠 읽기 테스트 : 이미지 </title>
+<meta name="description" content="센스 리더 웹 콘텐츠 읽기 테스트 이미지 편">
+<link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+
+	<div id="demo">
+		<h1>센스리더 웹 콘텐츠 읽기 테스트 - 이미지 편</h1>
+		
+		<!-- 테스트 요약: 대체 텍스트 속성 alt 값이 없을 때 -->
+		<figure>
+			<figcaption>대체 텍스트 속성 alt 값이 없을 때, 읽기</figcaption>
+			<img
+				src="./images/광해.jpg"
+				width="365" height="523"
+			>
+		</figure>
+		
+		<!-- 테스트 요약: 대체 텍스트 속성 alt 값이 없을 때 -->
+		<figure>
+			<figcaption>대체 텍스트 속성 alt 값이 있을 때, 읽기</figcaption>
+			<img
+				src="./images/광해.jpg"
+				alt="광해, 왕이 된 남자 영화 포스터 : 광해군 8년, 모두가 꿈꿔온 또 한명의 왕이 있었다. 2012년 9월 개봉 작품"
+				width="365" height="523"
+			>
+		</figure>
+		
+		<!-- 테스트 요약: 대체 텍스트 속성 alt 값이 비어있을 때 -->
+		<figure>
+			<figcaption>대체 텍스트 속성 alt 값이 비어있을 때, 읽기</figcaption>
+			<img
+				src="./images/광해.jpg"
+				alt=""
+				width="365" height="523"
+			>
+		</figure>
+		
+		<!-- 테스트 요약: 이미지 긴 설명 속성 longdesc 값이 설정되어 있을 때 -->
+		<figure>
+			<figcaption>이미지 긴 설명 속성 longdesc 값이 설정되어 있을 때, 읽기</figcaption>
+			<img
+				src="./images/광해.jpg"
+				alt="광해, 왕이 된 남자 영화 포스터 : 광해군 8년, 모두가 꿈꿔온 또 한명의 왕이 있었다. 2012년 9월 개봉 작품"
+				longdesc="http://goo.gl/dodck"
+				width="365" height="523"
+			>
+		</figure>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+@charset "utf-8";
+html {overflow-y: scroll;}
+body {font: 0.75em/1.5 "나눔 고딕", "Nanum Gothic", Dotum, Sans-Serief;}
+a img, iframe {border: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+
+/* #demo */
+#demo {width: 940px; margin: 30px auto; padding: 10px; background-color: #fff;}
+#demo h1 {margin-top: 0; font-size: 22px; font-weight: normal; font-weight: 100;}
+#demo figure {display: inline-block; width: 47%; margin: 0 .5% 10px .5%; padding: 6px; border: 1px solid #bfbfbf;}
+#demo figcaption {padding: 2px 4px; background-color: #303030; color: #fff;}
+#demo figure img {width: 100%; height: auto;}
+#demo iframe {border: 1px solid #dfded2; margin: 10px 10px 10px 0; overflow-x: hidden;}
+#demo table {background-color: #fff;}
+#demo th, #demo td {border: 1px solid; padding: .5em .9em;}
+
+/* 공용 클래스 */
+.acc-hidden { overflow: hidden; position: absolute; left: -9999em; width: 1px; height: 1px; visibility: hidden;}

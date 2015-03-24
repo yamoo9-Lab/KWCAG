@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>센스리더 웹 콘텐츠 읽기 테스트 : 표(table)</title>
+<meta name="description" content="센스 리더 웹 콘텐츠 읽기 테스트 표(table) 편">
+<link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+
+	<div id="demo">
+		<h1>센스리더 웹 콘텐츠 읽기 테스트 - 표(table) 편</h1>
+	
+		<!-- 테스트 요약: 표(table) -->
+		<!-- 
+
+		-->
+		<table summary="이 표는 총 4행 5열로 구성되어 있으며 1열은 증권사 추천건수를, 2열은 추천종목을, 3열은 전일 수정주가를, 4열은 변화율(전주대비/전월대비)을 표시하고 있습니다.">
+			<caption class="acc-hidden">증권사 추천건수 상위</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">추천건수</th>
+                    <th rowspan="2" scope="col">추천종목</th>
+                    <th rowspan="2" scope="col">전일 수정주가<br>(13.03.26)</th>
+                    <th colspan="2" id="headers-1">변화율(%)</th>
+                </tr>
+                <tr>
+                    <th id="headers-2">전주대비</th>
+                    <th id="headers-3">전월대비</th>
+                </tr>                   
+            </thead>
+            <tbody>
+            	<tr>
+	            	<td title="8개">8</td>
+	            	<td><a target="_blank" href="http://finance.naver.com/item/main.nhn?code=000660">SK 하이닉스</a></td>
+	            	<td title="29500 원">29,500</td>
+	            	<td title="2.9668 %" headers="headers-1 headers-2">2.97</td>
+	            	<td title="11.1111 %" headers="headers-1 headers-3">11.11</td>
+            	</tr>
+            	<tr>
+	            	<td title="7개">7</td>
+	            	<td><a target="_blank" href="http://finance.naver.com/item/main.nhn?code=005930">삼성전자</a></td>
+	            	<td title="1,509,000 원">1,509,000</td>
+	            	<td title="2.31 %" headers="headers-1 headers-2">2.31</td>
+	            	<td title="-1.18 %" headers="headers-1 headers-3">-1.18</td>
+            	</tr>
+            </tbody>
+        </table>
+
+	</div>
+
+</body>
+</html>
