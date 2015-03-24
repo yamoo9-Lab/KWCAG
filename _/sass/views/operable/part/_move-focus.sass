@@ -1,0 +1,46 @@
+////////////////////////////////
+// #move-focus
+#move-focus
+	table
+		width: 65%
+		border-collapse: collpase
+		border-spacing: 0
+		border: 0
+
+		th, td
+			font-size: 12px
+			border:
+				left: 0
+				right: 0
+				top: 1px solid #d1d1d1
+				bottom: 1px solid #d1d1d1
+			&.user_id
+				width: 130px
+				height: 30px
+				padding-left: 10px
+				background: #f4f3f2
+				span
+					color: #ff0000
+
+			&.user_id_input_field
+				padding-left: 10px
+				input
+					border: 1px #d1d1d1 solid
+					background-color: #ffffff
+					color: #84766e
+					font-size: 12px
+					line-height: (18px/12px)
+					text-indent: 0.5em
+
+				img
+					margin-left: 3px
+					vertical-align: -4px
+
+				.warn
+					color: #fe4940
+					font-size: 11px
+					padding-left: 0.3em
+
+
+	caption
+		@extend .acc-hidden

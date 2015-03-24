@@ -1,0 +1,108 @@
+////////////////////////////////
+// #map-zoom
+#map-zoom
+	> span
+		display: block
+		margin-bottom: 4px
+		font-size: 12px
+		color: #FE4940
+		letter-spacing: 0.02em
+		line-height: 1.5
+		border-bottom: 1px dotted #afb2b9
+		padding-bottom: 12px
+
+	code
+		background: #f1f1f1
+		border: 1px solid darken(#f1f1f1, 3%)
+		padding: 1px 4px
+		border-radius: 4px
+
+#d-map
+	border: 1px solid #6887f2
+	width: 960px - 2
+	height: 350px
+
+#d-roadview
+	margin-top: 5px
+	border: 1px solid #6887f2
+	width: 960px - 2
+	height: 350px
+
+.map-wrap
+	position: relative
+	overflow: hidden
+	@extend .cf
+
+	.custom-typecontrol, .custom-zoomcontrol
+		display: none
+
+	.custom-typecontrol
+		z-index: 200
+		position: absolute
+		top: 10px
+		left: 10px
+		float: left
+		height: 40px
+		overflow: hidden
+		font-size: 12px
+
+		a
+			float: left
+			display: inline-block
+			text-decoration: none
+			border: 1px solid #aab3c3
+			border-right: 0
+			padding: 0.4em 0.8em
+			border-radius: 6px 0 0 6px
+			text-shadow: 0 1px #aab3c3
+			background: #f6f5f5
+			color: #535965
+			&#btnSkyview
+				border-right: 1px solid #aab3c3
+				border-left: 0
+				border-radius: 0 6px 6px 0
+			&.selected-btn
+				background: #6c737e
+				color: #fff
+
+	.custom-zoomcontrol
+		z-index: 200
+		position: absolute
+		top: 50px
+		left: -5px
+		float: left
+		margin-left: 20px
+
+		a
+			display: inline-block
+			padding: 4px
+			-webkit-box-shadow: 0 0 3px #717885
+			-moz-box-shadow: 0 0 3px #717885
+			box-shadow: 0 0 3px #717885
+			border-radius: 50%
+			background: #fff
+			text-align: center
+			cursor: pointer
+			-webkit-transition: all 0.4s
+			transition: all 0.4s
+
+			&:focus, &:hover
+				-webkit-transform: scale(1.1)
+				-moz-transform: scale(1.1)
+				transform: scale(1.1)
+
+			&:active
+				-webkit-transform: scale(0.9)
+				-moz-transform: scale(0.9)
+				transform: scale(0.9)
+
+			img
+				float: left
+				width: 15px
+				height: 15px
+				border: none
+
+			&:first-child
+				margin:
+					bottom: 2px
+					left: -2px
