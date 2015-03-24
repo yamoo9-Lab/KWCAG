@@ -1,0 +1,177 @@
+@charset "utf-8";
+/**
+ * --------------------------------
+ * BASE
+ * --------------------------------
+ */
+html {
+	/*overflow-y: hidden;*/
+}
+
+body,
+p, h1, h2, h3, h4, h5, h6,
+ul, ol, li, dl, dt, dd,
+table, th, td,
+form, fieldset, legend, input, textarea, button, select {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 87.5%/1.5 "Nanum Gothic", Dotum, Sans-Serief;
+	letter-spacing: -0.01em;
+}
+
+/* 모든 박스의 width 값 내부에 border, padding 포함 */
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/**
+ * --------------------------------
+ * 테스트 목적 스타일링(지워도 됨)
+ * --------------------------------
+ */
+
+/* 포커스 요소 */
+:focus {
+	outline: 5px solid #fe4940;
+}
+
+/* 각 섹션 제목 */
+h1 {
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+/**
+ * --------------------------------
+ * LAYOUT
+ * --------------------------------
+ */
+#wrap {
+	position: relative;
+	min-width: 1280px;
+	min-height: 800px;
+	background-color: #f5f5f5;
+	color: #fff;
+}
+
+.skip_to_cont {
+	position: absolute;
+	z-index: 210;
+	top: 0;
+	left: -300px;
+	width: 230px;
+	color: #fff;
+	background: #3fb5c8;
+	line-height: 46px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+}
+.skip_to_cont:focus {
+	left: 0;
+}
+
+/**
+ * GNB (NEW)
+ * --------------------------------
+ */
+#headerWrap {
+	overflow: hidden;
+	width: 100%;
+	min-height: 45px;
+	height: 5.7vh;
+	padding-left: .5em;
+	background-color: #3fb5c8;
+	color: #fff;
+}
+
+#body_wrap {
+	min-height: 755px; /* >> 800 - 45 */
+	height: 94.3vh; /* >> 100 - 5.7(#hoaderWrap의 높이 값) */
+}
+
+/**
+ * LNB
+ * --------------------------------
+ */
+#lnb {
+	float: left;
+	width: 230px;
+	height: 100%;
+	padding: 0.7em;
+	background-color: #fc8b89;
+	color: #fff;
+}
+
+#lnb ul {
+	list-style: none;
+}
+
+#lnb a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/**
+ * CONTENT
+ * --------------------------------
+ */
+.container {
+	overflow: auto;
+	height: 100%;
+	background-color: #ffe070;
+}
+
+.contents {
+	width: 1050px;
+	height: 100%;
+	margin: 0 auto;
+	padding: .7em;
+	background-color: #5472d2;
+}
+
+.contents a {
+	display: inline-block;
+	margin-top: .7em;
+	padding: .1em .7em;
+	color: #3fb5c8;
+	background: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	box-shadow: 0px 2px 0px #b797c2;
+}
+
+.contents a:active {
+	position: relative;
+	top: 2px;
+	box-shadow: none;
+}
+
+/**
+ * COPYRIGHT
+ * --------------------------------
+ */
+#footerWrap {
+    position: absolute;
+    bottom: 25px;
+    width: 230px;
+    color: #333;
+}
+
+.copyright {
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+    line-height: 13px;
+    letter-spacing: -0.2px;
+}
+
+.copyright small {
+    display: block;
+    font-size: 10px;
+}

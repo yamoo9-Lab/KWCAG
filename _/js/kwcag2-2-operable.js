@@ -1,3 +1,9 @@
+if(!('trim' in String.prototype)) {
+	String.prototype.trim= function() {
+		return this.replace(/^\s+/, '').replace(/\s+$/, '');
+	};
+};
+
 /**
  * --------------------------------
  * 키보드 포커스 이동
