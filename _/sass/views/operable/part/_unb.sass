@@ -32,11 +32,13 @@ $unb-color: #46B212
 		position: relative
 		padding: 0.3em
 
-		&:hover, &.selected
+		&:hover,
+		&:focus,
+		&.selected
 			color: darken($unb-color, 30%)
 
 		&:focus
-			outline: none // √ Focus 상태 화면에 표시되도록 변경
+			// outline: none // √ Focus 상태 화면에 표시되도록 변경
 
 		&::after
 			position: absolute
