@@ -34,11 +34,14 @@
 			transform: rotate(0deg)
 
 		+ .list_relation
-			display: block
+			@extend .focusable:focus
+			width: 245px
+			// display: block
 
 
 .list_relation
-	display: none
+	@extend .acc-hidden
+	// display: none
 	box-sizing: border-box
 	position: absolute
 	left: 0

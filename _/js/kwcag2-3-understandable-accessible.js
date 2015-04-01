@@ -4,6 +4,7 @@
  * --------------------------------
  */
 (function($){
+
 	$('.opt .link_relation').on('click', function(e) {
 		e.preventDefault();
 		var $this = $(this);
@@ -14,6 +15,6 @@
 			$this.find('.toggle_btn').attr('aria-label', '닫기');
 			$this.addClass('open');
 		}
-
 	});
+
 })(window.jQuery);
