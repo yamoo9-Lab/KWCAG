@@ -634,4 +634,80 @@ video {
   border: 0;
 }
 
+/**
+ * --------------------------------
+ * 이해의 용이성
+ * --------------------------------
+ */
+.opt {
+  position: relative;
+}
+
+.link_relation {
+  position: relative;
+  display: block;
+  width: 245px;
+  height: 28px;
+  padding-left: 12px;
+  border: 1px solid #c9c9c9;
+  line-height: 32px;
+  color: #777;
+  text-decoration: none;
+}
+.link_relation .desc {
+  position: relative;
+  top: -3px;
+  left: -5px;
+}
+.link_relation .toggle_btn {
+  position: absolute;
+  top: -3px;
+  right: 6px;
+  font-family: "Arial";
+  font-size: 22px;
+  transform: rotate(-45deg);
+  transition: transform 0.04s ease-out;
+}
+.link_relation.open .toggle_btn {
+  transform: rotate(0deg);
+}
+.link_relation.open + .list_relation {
+  display: block;
+}
+
+.list_relation {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  list-style: none;
+  border: 1px solid #c9c9c9;
+  padding: 0.4em 0;
+  width: 245px;
+  background: #fff;
+}
+.list_relation.top {
+  top: -68px;
+}
+.list_relation.bottom {
+  top: 13px;
+}
+.list_relation li {
+  margin-bottom: 4px;
+}
+.list_relation li:last-child {
+  margin-bottom: 0;
+}
+.list_relation .link_option {
+  display: block;
+  text-decoration: none;
+  text-indent: 1em;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+.list_relation .link_option:hover, .list_relation .link_option:focus {
+  color: #595959;
+  background: #EEEEEE;
+}
+
 /*# sourceMappingURL=style.css.map */

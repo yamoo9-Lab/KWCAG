@@ -1,0 +1,71 @@
+.opt
+	position: relative
+	// overflow: hidden
+
+.link_relation
+	position: relative
+	display: block
+	width: 245px
+	height: 28px
+	padding-left: 12px
+	border: 1px solid #c9c9c9
+	solid #c9c9c9
+	line-height: 32px
+	color: #777
+	text-decoration: none
+
+	.desc
+		position: relative
+		top: -3px
+		left: -5px
+
+	.toggle_btn
+		position: absolute
+		top: -3px
+		right: 6px
+		font:
+			family: "Arial"
+			size: 22px
+		transform: rotate(-45deg)
+		transition: transform .04s ease-out
+
+	&.open
+		.toggle_btn
+			transform: rotate(0deg)
+
+		+ .list_relation
+			display: block
+
+
+.list_relation
+	display: none
+	box-sizing: border-box
+	position: absolute
+	left: 0
+	list-style: none
+	border: 1px solid #c9c9c9
+	padding: 0.4em 0
+	width: 245px
+	background: #fff
+
+	&.top
+		top: -68px
+
+	&.bottom
+		top: 13px
+
+	li
+		margin-bottom: 4px
+		&:last-child
+			margin-bottom: 0
+
+	.link_option
+		display: block
+		text-decoration: none
+		text-indent: 1em
+		color: #8c8c8c
+		font-size: 13px
+
+		&:hover, &:focus
+			color: darken(#8c8c8c, 20%)
+			background: #EEEEEE

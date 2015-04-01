@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if IE 6]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie6"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<!-- MS IE 브라우저 호환성 보기 설정: 사용자 웹 브라우저 최신버전에 맞게 설정 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>이해의 용이성 &lt; KWCAG 2.0</title>
+	<!-- 모바일 최적화 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS 스타일 호출 -->
+	<link rel="stylesheet" href="../_/css/style.css">
+	<!-- JS 라이브러리 호출 -->
+	<script src="../_/js/libs/modernizr.custom.14954.js"></script>
+	<script src="../_/js/libs/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--
+		3. 이해의 용이성 실습 예제
+		//////////////////////////
+		3.1 가독성
+		3.2 예측 가능성
+		3.3 콘텐츠의 논리성
+		3.4 입력 도움
+	-->
+
+	<div id="page">
+
+		<!-- 주 언어 명시 -->
+		<div class="question">
+			<h1>주 언어 명시</h1>
+			<p><strong>웹 페이지의 주 언이</strong>를 설정해주세요.<span class="exclamation-mark">!</span></p>
+		</div>
+		<!-- /.question -->
+
+		<!-- 셀렉트박스 접근성 -->
+		<div id="selectbox" class="question">
+			<h1>셀렉트박스 접근성</h1>
+			<p><strong>셀렉트박스</strong>의 접근성을 준수해주세요.<span class="exclamation-mark">!</span></p>
+
+			<div class="opt" role="list">
+				<span class="acc-hidden">선택내용: </span>
+				<a href class="link_relation" role="listitem">
+					<span class="desc">관련사이트</span>
+					<span class="toggle_btn" aria-label="열기" role="button">+</span>
+				</a>
+				<ul class="list_relation bottom" aria-hidden="true">
+					<li role="listitem"><a href="http://www.daum.net" class="link_option" target="_blank">다음 포털사이트</a></li>
+					<li role="listitem"><a href="http://www.kakao.com" class="link_option" target="_blank">카카오 서비스</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- /.question -->
+
+	</div>
+	<!-- /#page -->
+
+<script src="../_/js/kwcag2-3-understandable.js"></script>
+</body>
+</html>
