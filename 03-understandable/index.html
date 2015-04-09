@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!--[if IE 6]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie6"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
-<!--[if IE 9]> <html class="no-js lt-ie10 ie9"> <![endif]-->
-<!--[if !IE]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if IE 6]> <html lang="ko" class="no-js lt-ie10 lt-ie9 lt-ie8 ie6"> <![endif]-->
+<!--[if IE 7]> <html lang="ko" class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="ko" class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="ko" class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js" lang="ko"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8">
 	<!-- MS IE 브라우저 호환성 보기 설정: 사용자 웹 브라우저 최신버전에 맞게 설정 -->
@@ -48,11 +48,49 @@
 					<span class="desc">관련사이트</span>
 					<span class="toggle_btn" aria-label="열기" role="button">+</span>
 				</a>
-				<ul class="list_relation bottom" aria-hidden="true">
+				<ul class="list_relation up" aria-hidden="true">
 					<li role="listitem"><a href="http://www.daum.net" class="link_option" target="_blank">다음 포털사이트</a></li>
 					<li role="listitem"><a href="http://www.kakao.com" class="link_option" target="_blank">카카오 서비스</a></li>
 				</ul>
 			</div>
+
+		<p id="user-table-summary" class="acc-hidden">야무 한글 로렘입숨. 피어나는 씩씩하게 흐르는 가슴을 쉬지 하고 너 쿵쿵대는 내일의, 실수조차도, 설레게 찬란한 운동화도 고동소리 설레는 청춘의 다 들리는 꽃처럼. 거추장스런 가슴을, 빛나는 씩씩하게 흐르는 찬란한 피어나는 꽃처럼, 숨 죽여도 설레게.</p>
+
+
+
+
+		<label for="user_id">ID</label> <input id="user_id" name="user_id" type="text" value="" placeholder="@id_nmae">
+
+		<table id="user-table" border="1" aria-describedby="user-table-summary">
+			<cation>야무 한글 로렘입숨.</cation>
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th scope="col" id="read1">B</th>
+					<th scope="col">C</th>
+					<th scope="col">D</th>
+				</tr>
+			</thead>
+			<tr>
+				<th scope="row">table cell header</th>
+				<td>table cell data</td>
+				<td headers="read1 read2 read3">table cell data</td>
+				<td>table cell data</td>
+			</tr>
+			<tr>
+				<th scope="row">table cell header</th>
+				<td>table cell data</td>
+				<td>table cell data</td>
+				<td>table cell data</td>
+			</tr>
+			<tr>
+				<th scope="row">table cell header</th>
+				<td>table cell data</td>
+				<td>table cell data</td>
+				<td>table cell data</td>
+			</tr>
+		</table>
+
 
 		</div>
 		<!-- /.question -->
@@ -60,6 +98,6 @@
 	</div>
 	<!-- /#page -->
 
-<script src="../_/js/kwcag2-3-understandable.js"></script>
+<script src="../_/js/kwcag2-3-understandable-accessible.js"></script>
 </body>
 </html>

@@ -252,6 +252,4 @@ if(!('trim' in String.prototype)) {
 (function(global, $){
 	'use strict';
 
-
-
 })(window, window.jQuery);
