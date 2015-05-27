@@ -7,43 +7,19 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- MS IE 브라우저 호환성 보기 설정: 사용자 웹 브라우저 최신버전에 맞게 설정 -->
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
 	<title>인식의 용이성 &lt; KWCAG 2.0</title>
 	<!-- 모바일 최적화 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS 스타일 호출 -->
 	<link rel="stylesheet" href="../_/css/style.css">
-	<style>
-		/*Flash가 지원되는 환경*/
-		/*.flash body {
-			background: #ff0;
-		}*/
-
-		.flash .demo-flash embed {
-			display: block;
-		}
-
-		.flash .demo-flash img {
-			display: none;
-		}
-
-		/*Flash가 지원되지 않는 환경*/
-		/*body {
-			background: #f00;
-		}*/
-
-		.demo-flash embed {
-			display: none;
-		}
-
-		.demo-flash img {
-			display: block;
-		}
-	</style>
 	<!-- JS 라이브러리 호출 -->
 	<script src="../_/js/libs/modernizr.custom.14954.js"></script>
 	<script src="../_/js/libs/detectizr.min.js"></script>
 	<script src="../_/js/libs/videosub.js"></script>
+	<!-- Video.js -->
+	<link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.12/video.js"></script>
 </head>
 <body>
 
@@ -56,7 +32,7 @@
 	-->
 
 	<!-- 배경음악 정지 -->
-	<a href="#" class="acc-hidden focusable mute-BGM" role="button">배경음악 정지</a>
+	<a href="" onclick="stopBGM()" class="acc-hidden focusable mute-BGM" role="button">배경음악 정지</a>
 
 	<div id="page">
 
@@ -119,21 +95,23 @@
 				</ul>
 				<small>COPYRIGHT© 2014 SULMAEHWA. ALL RIGHTS RESERVED.</small>
 			</div> -->
+
+
 		</section>
 		<!-- /.question -->
 
 		<section class="question">
 			<h1>이미지 맵</h1>
 			<p><strong>내비게이션 이미지 맵</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
-			<img alt="설매화 사이트 서브내비게이션" src="../_/images/image-map.jpg" width="400" height="114" usemap="#navi-map">
+			<img alt="한국 디저트 카페 설매화 소개" src="../_/images/image-map.jpg" width="400" height="114" usemap="#navi-map">
 			<!-- 이미지 맵 영역 -->
 			<map name="navi-map">
 				<area
-					target="_blank"
-					title="새 창"
 					alt="창업안내"
 					shape="circle"
 					coords="47,47,43"
+					target="_blank"
+					title="새 창으로 열림"
 					href="http://www.sulmaehwa.co.kr/3-1.php">
 				<area
 					alt="경쟁력 &amp; 차별화"
@@ -141,8 +119,6 @@
 					coords="149,47,43"
 					href="http://www.sulmaehwa.co.kr/3-3.php">
 				<area
-					target="_blank"
-					title="새 창"
 					alt="매장안내"
 					shape="circle"
 					coords="251,47,43"
@@ -161,16 +137,10 @@
 			<h1>이미지 배너</h1>
 			<p><strong>이미지 배너</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
 			<a href="http://entertain.naver.com/tvBrand/kpopstar4" target="_blank" class="image-banner">
-				 <img alt="KPOPSTAR - TOP8 응원글달고 생방송 현장 가자! : TALK 바로가기" src="../_/images/banner.jpg" width="306" height="100" title="새 탭">
+				<img alt="K-POP STAR TOP 8 응원글 달고 생방송 현장 가자! TALK 바로가기" src="../_/images/banner.jpg" width="306" height="100">
 			</a>
 		</section>
 		<!-- /.question -->
-
-		<div class="demo-flash">
-			<embed width="430" height="105" name="" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://adimg.daumcdn.net/www4/3D8s/dGGZ/skin_top_general_430x105_130903ae.swf" wmode="opaque" quality="high" allowscriptaccess="always" flashvars="&amp;basicFile=http%3A//adimg.daumcdn.net/www4/3G8D/dXWq/samsungmonitor1_0515_430x105.swf&amp;basicClickUrl=http%3A//analytics.ad.daum.net/act%3Fask%3DoSWJn11R6FYNuDcFLOY81SwJXrDDeUUMW9kYSOstCy1N1OJ-lPHUGEQ1mXgC0Ek0cfoHUa05HyDr8SyffkCjTFAmMxPuRqqgfBtChSAIcxUCXkoAChTt7x1MjP1d2A2F_sxbTNnWW51RWQ2IC2YCBj8PDz4Fs9PJGlcOf5TVp2kE49GAwueGhGdLT7vY-HCPwcGMkoPV5rC3G83ClLmrZ4440RCaD_wLAcEn_K_Rrgu_KB5eLde4_h49kKtgKNLxSqGaM0dYP4_I5XALObR7XRAOIciTFDWxIcGZhD2TfWxVFYRU2bDZPkliq25wn7UXkIH3_WbooXzu5VnNyp3uYrJT0aXZLf_0yShoNZ036d8smwxpQkanneERYWJuKudpk7V9vbVhvQcnV0cYkMjSaVc13YrW_l_VthlRKKVOUMgtd2xclp6ItK70gupoRXdTV3uawKAR6HzqTxKi0qfdIAFQgFX5idYYfu82g1G-HM_Rqmu6zA8Dop6EnTbo-13I1FiOhJtyhA1uhEbj_SOhKq7ZySfDmjJL7MahHh4TeFU3_Yyoq5emUezi2rXaZpi5T8WZD07rm49KCdVHCLNEFbwOBCx8-tC-a6mvBJjf7Rf2LVWhCnDoxpeno3yFL49HWJL4oTwEoMeNrkgMJKzYX7N4hEuRQhI5XDJfPc7DtvXtsHR9LuM3Vrq0P1OsTPMv-OKa69fnnamq0t03RhZtd5o0x3m15CJ5TTfPvfA1J2dmGI-S6ddGwgZrYMqtyYdnP6OnrT00TFvukXFxmf38Zr306FbHrg6fLBpjPNhXJKTe84IIz5FkDJ6TQQLUzZ6BKRB9rXwEUjF21eZfjitbrZa2XNqfMAXGBr8KpIBhJQg">
-			<img src="../_/images/samsung-flash-banner-alt.png" width="430" height="105" alt="삼성 서비스를 이용해보세요.">
-		</div>
-
 
 		<section class="question cf">
 			<h1>Adobe Flash</h1>
@@ -196,18 +166,18 @@
 				<!-- http://ko.wikipedia.org/wiki/%EC%BD%94%EC%8A%A4%ED%94%BC_%EC%A7%80%EC%88%98 -->
 				<dt><abbr lang="en" title="KOrea composite Stock Price Index">KOSPI</abbr></dt>
 				<dd>
-					 <img alt="상승" src="../_/images/iconpplus.gif" width="17" height="13"> 2,029.91
+					<img alt="상승" title="상승" src="../_/images/iconpplus.gif" width="17" height="13"> 2,029.91
 				</dd>
 				<dd>42.58</dd>
 				<dd>2.14%</dd>
 			</dl>
 			<div class="QnA">
 				<p class="question-case">
-					<img alt="질문" src="../_/images/icon-Q.png" width="30" height="30">
+					<img alt="질문" title="질문" src="../_/images/icon-Q.png" width="30" height="30">
 					<strong class="dev-search faqSearch">[사이트] 전체 메뉴를 보고 싶어요</strong>
 				</p>
 				<p class="answer-case">
-					<img alt="답변" src="../_/images/icon-A.png" width="30" height="30"> 페이지 상단 [사이트맵]을 클릭하시면 행복창업지원센터의 전체 메뉴를 보실 수 있습니다.
+					<img alt="답변" title="답변" src="../_/images/icon-A.png" width="30" height="30"> 페이지 상단 [사이트맵]을 클릭하시면 행복창업지원센터의 전체 메뉴를 보실 수 있습니다.
 				</p>
 			</div>
 		</section>
@@ -219,31 +189,31 @@
 			<ul class="mservice cf">
         <li>
           <a href="https://www.jejuair.net/jejuair/serviceinfo/additional/preordered_meal.jsp">
-             <img alt="" src="../_/images/icon_preordered_meal.png" class="horcenter">
+            <img alt src="../_/images/icon_preordered_meal.png" class="horcenter">
             <em>사전 기내식 주문</em>
           </a>
         </li>
         <li>
           <a href="https://www.jejuair.net/jejuair/serviceinfo/additional/sideseat.jsp">
-             <img alt="" src="../_/images/icon_sideseat.png" class="horcenter">
+            <img alt src="../_/images/icon_sideseat.png" class="horcenter">
             <em>옆 좌석 구매</em>
           </a>
         </li>
         <li>
           <a href="https://www.jejuair.net/jejuair/serviceinfo/inflight/cabin_sales_service.jsp">
-             <img alt="" src="../_/images/ico_serve7.png" class="horcenter">
+            <img alt src="../_/images/ico_serve7.png" class="horcenter">
             <em>기내 면세품 판매</em>
           </a>
         </li>
         <li>
           <a href="https://www.jejuair.net/jejuair/com/jeju/ibe/serviceinfo/additional/air_cafe.do">
-		         <img alt="" src="../_/images/ico_serv_1.png" class="horcenter">
+		        <img alt src="../_/images/ico_serv_1.png" class="horcenter">
 		        <em>Air Cafe</em>
           </a>
         </li>
         <li>
           <a href="https://www.jejuair.net/jejuair/com/jeju/ibe/serviceinfo/partner/card_discount.do">
-             <img alt src="../_/images/ico_serv_2.png" class="horcenter">
+            <img alt src="../_/images/ico_serv_2.png" class="horcenter">
             <em>제휴할인</em>
           </a>
         </li>
@@ -254,7 +224,14 @@
 		<section class="question">
 			<h1>조직도 이미지</h1>
 			<p><strong>조직도 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
-			<img alt="모 기업의 조직도" longdesc="./organization.html" src="../_/images/organization_graphic.jpg" width="693" height="353" class="org-graph">
+			<img
+				alt="회사 조직도"
+				src="../_/images/organization_graphic.jpg"
+				width="693"
+				height="353"
+				class="org-graph"
+				longdesc="./longdesc/co-organization.html"
+			>
 		</section>
 		<!-- /.question -->
 
@@ -262,7 +239,7 @@
 			<h1><abbr title="Quick Reference">QR</abbr> 코드</h1>
 			<p><strong><abbr>QR</abbr></strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
 			<a href="http://www.daedeok.go.kr-qrcode">
-				<img alt src="../_/images/www.daedeok.go.kr-qrcode.png" width="205" height="189" class="qrcode">
+				<img alt="대덕구 관광 웹사이트(http://www.daedeok.go.kr-qrcode)" title="대덕구 관광 웹사이트(http://www.daedeok.go.kr-qrcode)" src="../_/images/www.daedeok.go.kr-qrcode.png" width="205" height="189" class="qrcode">
 			</a>
 			<p class="qr-msg">QR코드 이미지를 스마트폰의 QR코드 리더로 읽으시면<br> 대덕구 관광 웹사이트로 이동합니다.</p>
 		</section>
@@ -271,14 +248,26 @@
 		<section class="question">
 			<h1>약도 이미지</h1>
 			<p><strong>약도 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
-			 <img alt src="../_/images/map_parking.gif" width="660" height="584">
+			<img
+				alt="주차장 위치 안내"
+				src="../_/images/map_parking.gif"
+				width="660"
+				height="584"
+				longdesc="./longdesc/parking-map.html"
+			>
 		</section>
 		<!-- /.question -->
 
 		<section class="question">
 			<h1>악보 이미지</h1>
 			<p><strong>악보 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
-			 <img alt src="../_/images/song_paper.gif" width="660" height="663">
+			<img
+				alt="가톨릭 중앙의료원가 악보"
+				src="../_/images/song_paper.gif"
+				width="660"
+				height="663"
+				longdesc="./longdesc/song-score.html"
+			>
 		</section>
 		<!-- /.question -->
 
@@ -286,10 +275,10 @@
 			<h1>별점 이미지</h1>
 			<p><strong>별점 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
 			<a href="http://book.naver.com/bookdb/book_detail.nhn?bid=7459812" target="_blank">
-				 <img src="../_/images/book.jpg" width="140" height="181" alt="만들면서 배우는 모던 웹사이트 디자인 도서" class="book">
+				<img src="../_/images/book.jpg" width="140" height="181" alt="만들면서 배우는 모던 웹사이트 디자인 도서" class="book">
 			</a>
 			<ul class="book-info">
-				<li>평점: <span class="rating score-a ir"></span></li>
+				<li>평점: <span class="rating score-a ir">매우 만족</span></li>
 				<li>저자: 야무(지훈)</li>
 				<li>출판사: 한빛미디어</li>
 				<li>출간일: 2014.03.17</li>
@@ -300,21 +289,57 @@
 		<section class="question">
 			<h1>명화 이미지</h1>
 			<p><strong>명화 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
-			 <img alt src="../_/images/Gustav_Klimt_016.jpg" width="1079" height="1080" class="klimt">
+			<img
+				alt="Gustav Klimt 작가의 Kiss 작품"
+				src="../_/images/Gustav_Klimt_016.jpg"
+				width="1079"
+				height="1080"
+				class="klimt"
+				longdesc="./longdesc/http://ko.wikipedia.org/wiki/%ED%82%A4%EC%8A%A4_(%ED%81%B4%EB%A6%BC%ED%8A%B8)"
+			>
 		</section>
 		<!-- /.question -->
 
 		<section class="question">
 			<h1>HTML5 비디오</h1>
 			<p><strong>HTML5 비디오</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+
 			<!--
 				비디오 다운로드 경로
 				https://www.ted.com/talks/ze_frank_are_you_human?language=ko
 				http://ted2srt.org/talks/ze_frank_are_you_human
 			-->
-			<video controls="controls" width="960" height="540">
+
+			<!-- HTML5 비디오 사용 예 -->
+			<!-- <video controls="controls" width="960" height="540">
 				<source src="../_/media/ZeFrank_2014.mp4" type="video/mp4">
 				<source src="../_/media/ZeFrank_2014.ogv" type="video/ogv">
+				<track kind="captions" src="../_/media/ZeFrank_2014.ko.srt" srclang="ko" label="Korea"> -->
+				<!-- <track kind="captions" src="../_/media/ZeFrank_2014.ko.vtt" srclang="ko" label="Korea"> -->
+				<!-- <ul>
+					<li><a href="../_/media/ZeFrank_2014.mp4">무비 다운로드</a></li>
+					<li><a href="../_/media/ZeFrank_2014.ko.txt">자막 다운로드</a></li>
+				</ul>
+			</video> -->
+
+			<!-- Video.js 사용 예 -->
+			<video
+				class="video-js vjs-default-skin"
+				controls
+				preload="auto"
+				width="960"
+				height="540"
+				poster="http://video-js.zencoder.com/oceans-clip.png"
+				data-setup="{}"
+			>
+				<source src="../_/media/ZeFrank_2014.mp4" type="video/mp4">
+				<source src="../_/media/ZeFrank_2014.ogv" type="video/ogv">
+				<track kind="captions" src="../_/media/ZeFrank_2014.ko.vtt" srclang="ko" label="Korea" default>
+				<p class="vjs-no-js">비디오가 보이지 않는 원인은 자바스크립트가 비활성화되어 있거나, 혹은 브라우저가 HTML5를 지원하지 않는 구형 웹 브라우저일 수 있습니다. <a href="http://www.whatbrowser.org/intl/ko/" target="_blank">HTML5를 지원하는 최신 웹브라우저로 업그레이드</a> 하시면 HTML5 비디오 영상을 시청하실 수 있습니다.</p>
+				<ul>
+					<li><a href="../_/media/ZeFrank_2014.mp4">무비 다운로드</a></li>
+					<li><a href="../_/media/ZeFrank_2014.ko.txt">자막 다운로드</a></li>
+				</ul>
 			</video>
 		</section>
 		<!-- /.question -->
@@ -322,6 +347,6 @@
 	</div>
 	<!-- /#page -->
 
-<script src="../_/js/kwcag2-1-perceivable.js"></script>
+<script src="../_/js/accessible/kwcag2-1-perceivable.js"></script>
 </body>
 </html>
