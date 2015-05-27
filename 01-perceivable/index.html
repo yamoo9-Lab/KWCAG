@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if IE 6]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8" lang="ko-KR"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10 ie9" lang="ko-KR"> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js" lang="ko-KR"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<!-- MS IE 브라우저 호환성 보기 설정: 사용자 웹 브라우저 최신버전에 맞게 설정 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>인식의 용이성 &lt; KWCAG 2.0</title>
+	<!-- 모바일 최적화 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS 스타일 호출 -->
+	<link rel="stylesheet" href="../_/css/style.css">
+	<style>
+		/*Flash가 지원되는 환경*/
+		/*.flash body {
+			background: #ff0;
+		}*/
+
+		.flash .demo-flash embed {
+			display: block;
+		}
+
+		.flash .demo-flash img {
+			display: none;
+		}
+
+		/*Flash가 지원되지 않는 환경*/
+		/*body {
+			background: #f00;
+		}*/
+
+		.demo-flash embed {
+			display: none;
+		}
+
+		.demo-flash img {
+			display: block;
+		}
+	</style>
+	<!-- JS 라이브러리 호출 -->
+	<script src="../_/js/libs/modernizr.custom.14954.js"></script>
+	<script src="../_/js/libs/detectizr.min.js"></script>
+	<script src="../_/js/libs/videosub.js"></script>
+</head>
+<body>
+
+	<!--
+		1. 인식의 용이성 실습 예제
+		//////////////////////////
+		1.1 대체텍스트
+		1.2 멀티미디어 대체수단
+		1.3 명료성
+	-->
+
+	<!-- 배경음악 정지 -->
+	<a href="#" class="acc-hidden focusable mute-BGM" role="button">배경음악 정지</a>
+
+	<div id="page">
+
+		<section class="question cf">
+			<h1>배경음악 자동재생 정지 기능</h1>
+			<p><strong>자동으로 재생되는 배경음악</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+		</section>
+		<!-- /.question -->
+
+		<section class="question cf">
+			<h1>브랜드 로고 이미지</h1>
+			<p><strong>브랜드 이미지의 대체 텍스트</strong> 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<a href="http://www.sulmaehwa.co.kr/" class="logo">
+				<img alt="설매화" src="../_/images/logo-sulmaehwa.jpg" width="165" height="78">
+			</a>
+			<!-- /.logo -->
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>주소 이미지</h1>
+			<p><strong>주소 이미지의 대체 텍스트</strong> 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<img alt="상호: 설매화 대표: 백승훈 사업자등록번호: 119-86-34400 주소: 서울시 중구 신당동336-8 자이언트빌딩2층 TEL: 02-2233-0022 FAX: 02-2232-2210 COPYRIGHT© 2014 SULMAEHWA. ALL RIGHTS RESERVED." src="../_/images/copyright-address.gif" width="999" height="96">
+
+			<!-- 정의 목록(Definition List)을 사용하여 구조화한 경우 -->
+
+			<!-- <div class='copyright-address acc-hidden'>
+				<dl>
+					<dt>상호</dt>
+					<dd>설매화</dd>
+					<dt>대표</dt>
+					<dd>백승훈</dd>
+					<dt>사업자등록번호</dt>
+					<dd>119-86-34400</dd>
+					<dt>주소</dt>
+					<dd>서울시 중구 신당동336-8 자이언트 빌딩2층</dd>
+					<dt>TEL</dt>
+					<dd><a href="tel:+82-2-2233-0022">02-2233-0022</a></dd>
+					<dt>FAX</dt>
+					<dd><a href="fax:+82-2-2232-2210">02-2232-2210</a></dd>
+				</dl>
+				<small>COPYRIGHT(C) 2014 SULMAEHWA. ALLRIGHTS RESERVED.</small>
+			</div> -->
+
+
+			<!-- 비순차 목록(Unordered List)을 사용하여 구조화한 경우 -->
+			<!-- http://en.wikipedia.org/wiki/Telephone_numbers_in_South_Korea -->
+			<!-- http://stackoverflow.com/questions/9443520/does-anything-like-a-href-faxnumbernumber-a-exist -->
+			<!-- <li>TEL: <a href="tel:+82-2-2233-0022">02-2233-0022</a></li>
+			<li>FAX: <a href="fax:+82-2-2232-2210">02-2232-2210</a></li>
+
+			<div class="copyright-address acc-hidden">
+				<ul>
+					<li>상호: 설매화</li>
+					<li>대표: 백승훈</li>
+					<li>사업자등록번호: 119-86-34400</li>
+					<li><p>주소: 서울시 중구 신당동336-8 자이언트빌딩2층</p></li>
+					<li>TEL: 02-2233-0022</li>
+					<li>FAX: 02-2232-2210</li>
+				</ul>
+				<small>COPYRIGHT© 2014 SULMAEHWA. ALL RIGHTS RESERVED.</small>
+			</div> -->
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>이미지 맵</h1>
+			<p><strong>내비게이션 이미지 맵</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<img alt="설매화 사이트 서브내비게이션" src="../_/images/image-map.jpg" width="400" height="114" usemap="#navi-map">
+			<!-- 이미지 맵 영역 -->
+			<map name="navi-map">
+				<area
+					target="_blank"
+					title="새 창"
+					alt="창업안내"
+					shape="circle"
+					coords="47,47,43"
+					href="http://www.sulmaehwa.co.kr/3-1.php">
+				<area
+					alt="경쟁력 &amp; 차별화"
+					shape="circle"
+					coords="149,47,43"
+					href="http://www.sulmaehwa.co.kr/3-3.php">
+				<area
+					target="_blank"
+					title="새 창"
+					alt="매장안내"
+					shape="circle"
+					coords="251,47,43"
+					href="http://www.sulmaehwa.co.kr/bbs/board.php?bo_table=branch">
+				<area
+					alt="창업문의"
+					shape="circle"
+					coords="353,47,43"
+					href="http://www.sulmaehwa.co.kr/bbs/board.php?bo_table=online">
+			</map>
+			<!-- /#navi-map -->
+		</section>
+		<!-- /.question -->
+
+		<section class="question cf">
+			<h1>이미지 배너</h1>
+			<p><strong>이미지 배너</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<a href="http://entertain.naver.com/tvBrand/kpopstar4" target="_blank" class="image-banner">
+				 <img alt="KPOPSTAR - TOP8 응원글달고 생방송 현장 가자! : TALK 바로가기" src="../_/images/banner.jpg" width="306" height="100" title="새 탭">
+			</a>
+		</section>
+		<!-- /.question -->
+
+		<div class="demo-flash">
+			<embed width="430" height="105" name="" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://adimg.daumcdn.net/www4/3D8s/dGGZ/skin_top_general_430x105_130903ae.swf" wmode="opaque" quality="high" allowscriptaccess="always" flashvars="&amp;basicFile=http%3A//adimg.daumcdn.net/www4/3G8D/dXWq/samsungmonitor1_0515_430x105.swf&amp;basicClickUrl=http%3A//analytics.ad.daum.net/act%3Fask%3DoSWJn11R6FYNuDcFLOY81SwJXrDDeUUMW9kYSOstCy1N1OJ-lPHUGEQ1mXgC0Ek0cfoHUa05HyDr8SyffkCjTFAmMxPuRqqgfBtChSAIcxUCXkoAChTt7x1MjP1d2A2F_sxbTNnWW51RWQ2IC2YCBj8PDz4Fs9PJGlcOf5TVp2kE49GAwueGhGdLT7vY-HCPwcGMkoPV5rC3G83ClLmrZ4440RCaD_wLAcEn_K_Rrgu_KB5eLde4_h49kKtgKNLxSqGaM0dYP4_I5XALObR7XRAOIciTFDWxIcGZhD2TfWxVFYRU2bDZPkliq25wn7UXkIH3_WbooXzu5VnNyp3uYrJT0aXZLf_0yShoNZ036d8smwxpQkanneERYWJuKudpk7V9vbVhvQcnV0cYkMjSaVc13YrW_l_VthlRKKVOUMgtd2xclp6ItK70gupoRXdTV3uawKAR6HzqTxKi0qfdIAFQgFX5idYYfu82g1G-HM_Rqmu6zA8Dop6EnTbo-13I1FiOhJtyhA1uhEbj_SOhKq7ZySfDmjJL7MahHh4TeFU3_Yyoq5emUezi2rXaZpi5T8WZD07rm49KCdVHCLNEFbwOBCx8-tC-a6mvBJjf7Rf2LVWhCnDoxpeno3yFL49HWJL4oTwEoMeNrkgMJKzYX7N4hEuRQhI5XDJfPc7DtvXtsHR9LuM3Vrq0P1OsTPMv-OKa69fnnamq0t03RhZtd5o0x3m15CJ5TTfPvfA1J2dmGI-S6ddGwgZrYMqtyYdnP6OnrT00TFvukXFxmf38Zr306FbHrg6fLBpjPNhXJKTe84IIz5FkDJ6TQQLUzZ6BKRB9rXwEUjF21eZfjitbrZa2XNqfMAXGBr8KpIBhJQg">
+			<img src="../_/images/samsung-flash-banner-alt.png" width="430" height="105" alt="삼성 서비스를 이용해보세요.">
+		</div>
+
+
+		<section class="question cf">
+			<h1>Adobe Flash</h1>
+			<p><strong>플래시 배너</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<article class="flash-banner">
+				<h2 class="acc-hidden">플래시 배너</h2>
+				<!-- 플래시 지원 시, 보여지는 플래시 무비 -->
+				<embed width="280" height="150" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://adimg.daumcdn.net/www4/1gIs/cxaK/skin_bs_general_280x150_0820.swf" wmode="opaque" quality="high" allowscriptaccess="always" flashvars="&amp;basicFile=http%3A//adimg.daumcdn.net/www4/885239/877485/280x150_hana.swf&amp;basicClickUrl=http%3A//analytics.ad.daum.net/act%3Fask%3DoSWJn11R6FYNuDcFLOY81SwJXrDDeUUMW9kYSOstCy1N1OJ-lPHUGEQ1mXgC0Ek0HSWK_xyxc5qltXX_GQpolyUTWX5Qle_TEcq5TumaX7B6J-copzxb-fqiISGDQDkJBhUlsNDir5QNZu0CNIxM0XMmgRZNI_2XSnyAoZJSIv61vyW-bxKqT-0dbojH87RmRASFkEnBXX__4oD17rsa5I440RCaD_wLAcEn_K_Rrgu_KB5eLde4_h49kKtgKNLxXVqdoRm9f5k0SGDjZ3lspxAOIciTFDWxIcGZhD2TfWxVFYRU2bDZPkliq25wn7UXkIH3_WbooXzu5VnNyp3uYrJT0aXZLf_0yShoNZ036d8smwxpQkanneERYWJuKudpk7V9vbVhvQcnV0cYkMjSaVaFMLojeuwFrxAgCJFLEsotd2xclp6ItK70gupoRXdTV3uawKAR6HzqTxKi0qfdIMZcAb0ooVA0z7NTRNm0U0_fVOtVGcCAjPr79qnbu3e31FiOhJtyhA1uhEbj_SOhKlv5ZXhrrgdM_WinY8At3unl1iVkuYCJu-Vb7aarO8bhpaam_L4ASbcWMIkaY7oF9Hy7hD_wDiifoM-96zjRR0m5GgrQARLY0t-RAvDzdTTPNFNibQ1umTs3ew2tBjy48bN4hEuRQhI5XDJfPc7DtvXtsHR9LuM3Vrq0P1OsTPMv9vYs8-WqiYefokSIzv3ucwVXdbs43xUrGFH1YdeCxYUqHQmE3YDspR1QcelUBDH0s5f3IKtMr5Tcj5aUCzmZO_fz3Ix8t6OkQ79cr6VcPR04eozydvachZYOl0yUyfNwgSJn9z08KsmRjN8PutSD9o8WVgqslRjyhi9PdB4oNVM">
+				<a class="acc-hidden focusable flash-link" href="http://www.hanatour.com/asp/promotion/autopromo/ap-20000.asp?src=image&amp;kw=1164C4&amp;promo_code=P11060&amp;etc_code=A=daum&amp;hanafree" target="_blank">하나 Free마트 - 친구 소환하면 iPad Mini 득템찬스, 마트구경가기 &gt; www.hanafree.com</a>
+				<!-- 플래시 미지원 시, 대체하여 보여지는 이미지 -->
+				<a class="flash-banner-alt" href="http://www.hanatour.com/asp/promotion/autopromo/ap-20000.asp?src=image&amp;kw=1164C4&amp;promo_code=P11060&amp;etc_code=A=daum&amp;hanafree" target="_blank">
+					<img src="../_/images/flash-banner.png" width="564" height="302" alt="하나 Free마트 - 친구 소환하면 iPad Mini 득템찬스, 마트구경가기 &gt; www.hanafree.com">
+				</a>
+			</article>
+			<!-- /.flash-banner -->
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>아이콘</h1>
+			<p><strong>아이콘</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<dl id="kospi">
+				<!-- http://ko.wikipedia.org/wiki/%EC%BD%94%EC%8A%A4%ED%94%BC_%EC%A7%80%EC%88%98 -->
+				<dt><abbr lang="en" title="KOrea composite Stock Price Index">KOSPI</abbr></dt>
+				<dd>
+					 <img alt src="../_/images/iconpplus.gif" width="17" height="13"> 2,029.91
+				</dd>
+				<dd>42.58</dd>
+				<dd>2.14%</dd>
+			</dl>
+			<div class="QnA">
+				<p class="question-case">
+					<img alt src="../_/images/icon-Q.png" width="30" height="30">
+					<strong class="dev-search faqSearch">[사이트] 전체 메뉴를 보고 싶어요</strong>
+				</p>
+				<p class="answer-case">
+					<img alt src="../_/images/icon-A.png" width="30" height="30"> 페이지 상단 [사이트맵]을 클릭하시면 행복창업지원센터의 전체 메뉴를 보실 수 있습니다.
+				</p>
+			</div>
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>콘텐츠 이미지</h1>
+			<p><strong>콘텐츠 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<ul class="mservice cf">
+        <li>
+          <a href="https://www.jejuair.net/jejuair/serviceinfo/additional/preordered_meal.jsp">
+             <img alt src="../_/images/icon_preordered_meal.png" class="horcenter">
+            <em>사전 기내식 주문</em>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jejuair.net/jejuair/serviceinfo/additional/sideseat.jsp">
+             <img alt src="../_/images/icon_sideseat.png" class="horcenter">
+            <em>옆 좌석 구매</em>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jejuair.net/jejuair/serviceinfo/inflight/cabin_sales_service.jsp">
+             <img alt src="../_/images/ico_serve7.png" class="horcenter">
+            <em>기내 면세품 판매</em>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jejuair.net/jejuair/com/jeju/ibe/serviceinfo/additional/air_cafe.do">
+		         <img alt src="../_/images/ico_serv_1.png" class="horcenter">
+		        <em>Air Cafe</em>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jejuair.net/jejuair/com/jeju/ibe/serviceinfo/partner/card_discount.do">
+             <img alt src="../_/images/ico_serv_2.png" class="horcenter">
+            <em>제휴할인</em>
+          </a>
+        </li>
+      </ul>
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>조직도 이미지</h1>
+			<p><strong>조직도 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			 <img alt src="../_/images/organization_graphic.jpg" width="693" height="353" class="org-graph">
+		</section>
+		<!-- /.question -->
+
+		<section class="question cf">
+			<h1><abbr title="Quick Reference">QR</abbr> 코드</h1>
+			<p><strong><abbr>QR</abbr></strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<a href="http://www.daedeok.go.kr-qrcode">
+				<img alt src="../_/images/www.daedeok.go.kr-qrcode.png" width="205" height="189" class="qrcode">
+			</a>
+			<p class="qr-msg">QR코드 이미지를 스마트폰의 QR코드 리더로 읽으시면<br> 대덕구 관광 웹사이트로 이동합니다.</p>
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>약도 이미지</h1>
+			<p><strong>약도 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			 <img alt src="../_/images/map_parking.gif" width="660" height="584">
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>악보 이미지</h1>
+			<p><strong>악보 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			 <img alt src="../_/images/song_paper.gif" width="660" height="663">
+		</section>
+		<!-- /.question -->
+
+		<section class="question cf">
+			<h1>별점 이미지</h1>
+			<p><strong>별점 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<a href="http://book.naver.com/bookdb/book_detail.nhn?bid=7459812" target="_blank">
+				 <img src="../_/images/book.jpg" width="140" height="181" alt="만들면서 배우는 모던 웹사이트 디자인 도서" class="book">
+			</a>
+			<ul class="book-info">
+				<li>평점: <span class="rating score-a ir"></span></li>
+				<li>저자: 야무(지훈)</li>
+				<li>출판사: 한빛미디어</li>
+				<li>출간일: 2014.03.17</li>
+			</ul>
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>명화 이미지</h1>
+			<p><strong>명화 이미지</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			 <img alt src="../_/images/Gustav_Klimt_016.jpg" width="1079" height="1080" class="klimt">
+		</section>
+		<!-- /.question -->
+
+		<section class="question">
+			<h1>HTML5 비디오</h1>
+			<p><strong>HTML5 비디오</strong>의 접근성을 준수해주세요<span class="exclamation-mark">!</span></p>
+			<!--
+				비디오 다운로드 경로
+				https://www.ted.com/talks/ze_frank_are_you_human?language=ko
+				http://ted2srt.org/talks/ze_frank_are_you_human
+			-->
+			<video controls="controls" width="960" height="540">
+				<source src="../_/media/ZeFrank_2014.mp4" type="video/mp4">
+				<source src="../_/media/ZeFrank_2014.ogv" type="video/ogv">
+			</video>
+		</section>
+		<!-- /.question -->
+
+	</div>
+	<!-- /#page -->
+
+<script src="../_/js/kwcag2-1-perceivable.js"></script>
+</body>
+</html>
