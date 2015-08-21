@@ -96,7 +96,6 @@ if(!('trim' in String.prototype)) {
 })(window, window.jQuery);
 
 
-
 /**
  * --------------------------------
  * 레이어 팝업, 툴팁: 포커스 이동
@@ -108,14 +107,10 @@ if(!('trim' in String.prototype)) {
 	var $layer_btn         = $('#layer-dim .layer_content_btn'),
 		$layer_content_dim = $('.layer_dim, .layer_content');
 
-	$layer_btn.on('click', function(e) {
-		e.preventDefault();
-		$layer_content_dim.addClass('show');
-	});
+	// 팝업 레이어를 여는 코드
 
-	$layer_content_dim.eq(0).on('click', '.close, .dont-show', function(e) {
-		$layer_content_dim.removeClass('show');
-	});
+	// 팝업 레이어를 닫는 코드
+
 
 })(window, window.jQuery);
 
@@ -161,7 +156,7 @@ if(!('trim' in String.prototype)) {
 	 * --------------------------------
 	 */
 	// // 지도 타입 변경 컨트롤을 생성한다
-	// var mapTypeControl = new daum.maps.MapTypeControl();
+	var mapTypeControl = new daum.maps.MapTypeControl();
 	// // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
 	// map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
 	// // 지도에 확대 축소 컨트롤을 생성한다

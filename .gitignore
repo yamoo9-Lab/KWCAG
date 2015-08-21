@@ -3,11 +3,10 @@
 
 ###Temp###
 DEMO
-01-perceivable-solve/
-02-operable-solve/
-03-understandable-solve/
-04-robust-solve/
+*-solve
 _/js/accessible/
+
+
 
 # Logs
 logs
