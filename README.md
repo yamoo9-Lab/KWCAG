@@ -54,3 +54,14 @@
 		- 마크업 오류 방지
 	- __웹 애플리케이션 접근성__
 		- 웹 애플리케이션 접근성 준수
+
+## 참고
+
+- [W3C Process Document](https://www.w3.org/Consortium/Process/Process-19991111/tr.html)
+- [W3C 표준화 제정 단계(번역)](http://wit.nts-corp.com/2013/10/16/280)
+- [WCAG 2.0(번역)](http://www.w3c.or.kr/Translation/WCAG20/)
+- [WCAG 2.0 테크닉](https://www.w3.org/TR/WCAG20-TECHS/)
+- [WCAG 2.1 업그레이드](https://www.w3.org/blog/2016/10/wcag-2-1-under-exploration/)
+- [W3, WAI 소식](https://www.w3.org/WAI/)
+- [W3, WAI 튜토리얼](https://www.w3.org/WAI/tutorials/)
+- [W3, WAI 접근성 사례별 영상(Perspectives)](https://www.w3.org/WAI/perspectives/)
